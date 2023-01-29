@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+
+
+*{
+
+  box-sizing: border-box;
+  height: 100%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 15px;
+  font-family: Lato, sans-serif;
+  
+
+}
+#quote-box{
+  width: 45%;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 3.5%;
+ background-color: white;
+ border-radius: 5px;
+display:inline-block;
+min-width: 350px;
+
+}
+ #tweet-quote, #new-quote{
+
+border-radius: 2.5px;
+}
+#text{
+  width: 100%;
+  height: auto;
+  font-size:xx-large;
+}
+#author{
+  width: 100%;
+  height: auto;
+  padding: 20px 0 20px 0;
+  text-align: right;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+#new-quote{
+  height: 50px;
+  width: 100px;
+  float:right;
+ color:white;
+ border:none;
+ font-size: medium;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#twitter-logo{
+  height: 25px;
+  width: auto;
+ 
+}
+#tweet-quote-container{
+  padding:10px;
+  height: auto;
+  width: auto;
+  float: left;
+  border-radius: 2.5px;
+}
+#tweet-quote-container:hover, #new-quote:hover{
+cursor: pointer;
 }
